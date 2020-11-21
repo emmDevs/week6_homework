@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#form");
     form.addEventListener("submit", handleFormSubmit); 
 
+    // const diet = document.querySelector("#diet");
+    // diet.addEventListener("change", handleDietChange);
+
     const deleteAll = document.querySelector("#delete-all");
     deleteAll.addEventListener("click", handleDeleteAllClick);
 })
@@ -34,7 +37,14 @@ const createEndangeredAnimalsItem = function (form) {
     continent.textContent = form.continent.value;
     endangeredAnimalsItem.appendChild(continent);
 
+    const diet = document.createElement("p");
+    diet.textContent = document.querySelector('input[name="diet"]:checked').value
+    endangeredAnimalsItem.appendChild(diet)
+    
+    
+
     return endangeredAnimalsItem;
+
 }
 
 const handleDeleteAllClick = function (event) {
