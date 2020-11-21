@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-   const form = document.querySelector("#form");
-   form.addEventListener("submit", handleFormSubmit); 
+    console.log("dom has loaded");
+    
+    const form = document.querySelector("#form");
+    form.addEventListener("submit", handleFormSubmit); 
 
-   const deleteAll = document.querySelector("#delete-all");
-   deleteAll.addEventListener("click", handleDeleteAllClick);
+    const deleteAll = document.querySelector("#delete-all");
+    deleteAll.addEventListener("click", handleDeleteAllClick);
 })
 
 const handleFormSubmit = function (event) {
@@ -35,7 +37,7 @@ const createEndangeredAnimalsItem = function (form) {
     return endangeredAnimalsItem;
 }
 
-const handleFormSubmit = function (event) {
+const handleDeleteAllClick = function (event) {
     const endangeredAnimalsList = document.querySelector("#endangered-animals-list");
     endangeredAnimalsList.innerHTML = "";
 }
