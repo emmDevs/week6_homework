@@ -26,7 +26,7 @@ label.primary{
     margin-right: 20px;
 }
 
-h1{
+#h1{
     text-align: center;
 }
 
@@ -39,6 +39,7 @@ button{
 }
 
 #endangered-animals-list{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

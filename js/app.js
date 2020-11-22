@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBar = document.forms['search'].querySelector('input');
     searchBar.addEventListener('keyup', handleSearchKeyup);
 
+    //add event listener for mouseover event
+
 })
 
 //create the li and attach to the ul
@@ -70,4 +72,14 @@ const handleSearchKeyup = function(event){
             animal.style.display = 'none';
         }
     })
+}
+
+//on mouse over event
+const changeText = function(){
+    const text = document.querySelector('#h1').style.color = 'red';
+}
+
+//on mouse out event
+const changeTextBack = function(){
+    const text = document.querySelector('#h1').style.color = '';
 }
