@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBar = document.forms['search'].querySelector('input');
     searchBar.addEventListener('keyup', handleSearchKeyup);
 
-    //add event listener for mouseover event
-
 })
 
 //create the li and attach to the ul
@@ -49,6 +47,10 @@ const createEndangeredAnimalsItem = function (form) {
     diet.textContent = document.querySelector('input[name="diet"]:checked').value;
     endangeredAnimalsItem.appendChild(diet)
 //select habitat
+    const habitat = document.createElement("p");
+    habitat.textContent = document.querySelector('input[class="habitat"]:checked').value;
+    endangeredAnimalsItem.appendChild(habitat);
+    
     
     return endangeredAnimalsItem;  
 }
