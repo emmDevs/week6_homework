@@ -12,24 +12,24 @@
     <form id="search">
         <div id = "form-wrapper">
             <label for="search" class="primary">Search</label>
-            <input type="text" placeholder="Search Endangered Animals">
+            <input type="text" placeholder="Search Animals...">
         </div>
     </form>
     <form id="form">
         <div id="form-wrapper">
             <div class="form-item">
                 <label for="name" class="primary">Name</label>
-                <input type="text" id="name" required/>
+                <input class="input" type="text" id="name" required/>
             </div>
 
             <div class="form-item">
                 <label for="species" class="primary">Species</label>
-                <input type="text" id="species" required>
+                <input class="input" type="text" id="species" required>
             </div>
 
             <div class="form-item">
                 <label for="continent" class="primary">Continent</label>
-                <select id="continent">
+                <select class="input" id="continent">
                     <option value="" disabled selected></option>
                     <option value="Africa">Africa</option>
                     <option value="Antartica">Antartica</option>
@@ -40,6 +40,7 @@
                     <option value="South-America">South America</option>
                 </select>
             </div>
+        </div>
             <br>
             <div class="form-item">
                 <label for="diet" class="primary">Diet</label>
@@ -48,8 +49,8 @@
                 <input type="radio" name="diet" id="omnivore" value="Omnivore">Omnivore
             </div>
 
-        </div>
-        <input type="submit" value="Save"/>
+        
+        <input class="save" type="submit" value="Save"/>
     </form>  
     
     <button id="delete-all">Delete All</button>

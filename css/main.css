@@ -52,3 +52,19 @@ button{
     border-radius: 5%;
     background: #ddeaff;
 }
+
+#search{
+    margin-left: 36px;
+}
+
+.save{
+    margin-top: 15px;
+}
+
+#delete-all{
+    margin-top: 15px;
+}
+
+.input{
+    margin-right: 15px;
+}

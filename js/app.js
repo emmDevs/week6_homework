@@ -60,21 +60,6 @@ const handleDeleteAllClick = function (event) {
 }
 
 // search filter
-// const handleSearchKeyup = function(event) {
-//     const list = document.querySelector('endangered-animals-list')
-//     const input = event.target.value.toLowerCase();
-//     const animals = list.getElementsByTagName("li");
-//     Array.from(animals).forEach(function(animal){
-//         const name = animal.firstElement.textContent;
-//         if(name.toLowerCase().indexOf(input) !== -1){
-//             animal.style.display = "block"; 
-//         }else{
-//             animal.style.display = "none";
-//         }
-//     })
-// }
-
-// search filter
 const handleSearchKeyup = function(event){
     const list = document.querySelector('#endangered-animals-list')
     const term = event.target.value.toLowerCase();
