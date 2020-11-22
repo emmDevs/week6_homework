@@ -38,8 +38,9 @@ button{
     margin-left: 36px;
 }
 
-.endangered-animals-list{
+#endangered-animals-list{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
 }

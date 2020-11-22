@@ -30,27 +30,25 @@ const handleFormSubmit = function (event) {
 const createEndangeredAnimalsItem = function (form) {
     const endangeredAnimalsItem = document.createElement("li");
     endangeredAnimalsItem.classList.add("endangered-animals-item");
-
+//name of animal
     const name = document.createElement("h2");
     name.textContent = form.name.value;
     endangeredAnimalsItem.appendChild(name);
-
+//name of species
     const species = document.createElement("h3");
     species.textContent = form.species.value;
     endangeredAnimalsItem.appendChild(species);
-
+//select continent
     const continent = document.createElement("p");
     continent.textContent = form.continent.value;
     endangeredAnimalsItem.appendChild(continent);
-
+//select diet
     const diet = document.createElement("p");
-    diet.textContent = document.querySelector('input[name="diet"]:checked').value
+    diet.textContent = document.querySelector('input[name="diet"]:checked').value;
     endangeredAnimalsItem.appendChild(diet)
+//select habitat
     
-    
-
-    return endangeredAnimalsItem;
-
+    return endangeredAnimalsItem;  
 }
 
 // delete all event being handled
